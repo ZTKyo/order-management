@@ -1,0 +1,109 @@
+/* 移动端已收款订单卡片样式 */
+
+.card {
+  background: #faf9ff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  border: 1px solid #ede9fe;
+  transition: box-shadow 0.2s;
+}
+
+.card:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+/* 顶部行：客服名 + 金额 */
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.agentName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.amount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5b21b6;
+  line-height: 1.3;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+/* 订单号 */
+.orderId {
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+/* 备注 */
+.remark {
+  margin-bottom: 8px;
+  padding: 5px 8px;
+  background: #f5f3ff;
+  border-radius: 6px;
+}
+
+.remarkLabel {
+  font-size: 11px;
+  color: #bbb;
+}
+
+.remarkText {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+}
+
+/* 日期行 */
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.paidDate {
+  font-size: 11px;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+/* 操作按钮 */
+.actions {
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #ede9fe;
+  padding-top: 10px;
+}
+
+.btnDelete {
+  padding: 6px 12px;
+  border: 1.5px solid #fca5a5;
+  background: transparent;
+  color: #dc2626;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.btnDelete:active {
+  background: #fef2f2;
+}

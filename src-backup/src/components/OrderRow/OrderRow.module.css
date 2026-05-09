@@ -1,0 +1,132 @@
+/* 订单行样式 */
+.row {
+  border-bottom: 1px solid #f0ede8;
+  background: #fff;
+  transition: background 0.15s;
+}
+
+.row:hover {
+  background: #f5f3f0 !important;
+}
+
+.groupRow td {
+  border-top: 2px solid #e8e4de !important;
+  background: #f8f7f4 !important;
+}
+
+.cell {
+  padding: 12px 14px;
+  vertical-align: middle;
+}
+
+.checkboxCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.agentName {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.agentCount {
+  font-size: 11px;
+  color: #bbb;
+  margin-top: 2px;
+}
+
+.indent {
+  color: #e0dbd4;
+  font-size: 12px;
+  padding-left: 4px;
+}
+
+.orderId {
+  padding: 12px 14px;
+  font-family: monospace;
+  font-size: 11px;
+  color: #666;
+}
+
+.amount {
+  padding: 12px 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.date {
+  padding: 12px 14px;
+  color: #666;
+  font-size: 13px;
+}
+
+.entryDate {
+  color: #666;
+}
+
+.history {
+  color: #ccc;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btnGhost {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: transparent;
+  border: 1.5px solid #d1cec9;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  color: #555;
+  transition: all 0.2s;
+}
+
+.btnGhost:hover {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
+
+.btnPaid {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: transparent;
+  border: 1.5px solid #c4b5fd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  color: #5b21b6;
+  transition: all 0.2s;
+}
+
+.btnPaid:hover {
+  background: #f5f3ff;
+}
+
+.btnDanger {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: transparent;
+  border: 1.5px solid #fca5a5;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  color: #dc2626;
+  transition: all 0.2s;
+}
+
+.btnDanger:hover {
+  background: #fef2f2;
+}

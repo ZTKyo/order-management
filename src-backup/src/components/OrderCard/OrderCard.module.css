@@ -1,0 +1,227 @@
+/* 移动端订单卡片样式 */
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.card:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.selected {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6, 0 1px 3px rgba(59, 130, 246, 0.15);
+}
+
+/* 顶部行：客服名 + 金额 */
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.agentName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+/* 订单号 */
+.orderId {
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+/* 备注 */
+.remark {
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  background: #f8f7f4;
+  border-radius: 6px;
+}
+
+.remarkLabel {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.remarkText {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+}
+
+/* 状态 + 日期行 */
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+/* 状态标签 - 药丸样式 */
+.statusPending {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.statusReceived {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.statusSettleable {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.statusPaid {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+/* 日期文字 */
+.date {
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* 操作按钮 */
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-top: 1px solid #f0ede8;
+  padding-top: 12px;
+}
+
+.btnReceived {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 12px;
+  border: 1.5px solid #065f46;
+  background: #065f46;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s;
+}
+
+.btnReceived:active {
+  opacity: 0.8;
+}
+
+.btnPaid {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 12px;
+  border: 1.5px solid #5b21b6;
+  background: #5b21b6;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s;
+}
+
+.btnPaid:active {
+  opacity: 0.8;
+}
+
+.btnRemark {
+  padding: 7px 12px;
+  border: 1.5px solid #d1cec9;
+  background: transparent;
+  color: #555;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.btnRemark:active {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
+
+.btnDelete {
+  padding: 7px 12px;
+  border: 1.5px solid #fca5a5;
+  background: transparent;
+  color: #dc2626;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.btnDelete:active {
+  background: #fef2f2;
+}
+
+/* 选中勾选指示器 */
+.checkIndicator {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}

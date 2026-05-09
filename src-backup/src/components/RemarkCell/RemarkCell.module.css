@@ -1,0 +1,62 @@
+/* 备注单元格样式 */
+.editContainer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.input {
+  border: 1.5px solid #1a1a1a;
+  border-radius: 4px;
+  padding: 3px 7px;
+  font-size: 13px;
+  width: 140px;
+  outline: none;
+  font-family: inherit;
+}
+
+.saveBtn {
+  border: none;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.saveBtn:hover {
+  background: #333;
+}
+
+.cancelBtn {
+  border: none;
+  background: transparent;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.cancelBtn:hover {
+  color: #666;
+}
+
+.display {
+  cursor: pointer;
+  font-size: 13px;
+  color: #444;
+  padding: 2px 4px;
+  border-radius: 4px;
+  min-width: 80px;
+  border: 1.5px dashed transparent;
+  transition: border 0.15s;
+}
+
+.display:hover {
+  border-color: #d1cec9;
+}
+
+.display:global(.empty) {
+  color: #ccc;
+}
